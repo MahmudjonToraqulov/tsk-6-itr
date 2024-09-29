@@ -30,7 +30,7 @@ const BoardPage = () => {
   const [participants, setParticipants] = useState([]);
 
   const { id } = useParams();
-  const socket = io("http://localhost:8000");
+  const socket = io("https://tsk-6-itr-2.onrender.com/");
   const userNameFromState = useSelector((state) => state.users.userName);
 
   const update = () => {

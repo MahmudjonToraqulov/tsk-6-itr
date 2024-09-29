@@ -3,7 +3,7 @@ import axios from "axios";
 export const fetchBoards = (setData, setIsLoading) => {
   setIsLoading(true);
   axios
-    .get("http://localhost:8000/api/boards")
+    .get("https://tsk-6-itr-2.onrender.com/api/boards")
     .then((response) => {
       setData(response.data);
       setIsLoading(false);
@@ -20,7 +20,7 @@ export const addNewBoard = (
   newBoardName
 ) => {
   axios
-    .post("http://localhost:8000/api/boards", {
+    .post("https://tsk-6-itr-2.onrender.com/boards", {
       name: newBoardName,
     })
     .then((response) => {
