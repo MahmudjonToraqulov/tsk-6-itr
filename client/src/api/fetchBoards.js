@@ -9,7 +9,7 @@ export const fetchBoards = (setData, setIsLoading) => {
       setIsLoading(false);
     })
     .catch((error) => {
-      console.error("Ошибка при загрузке списка досок:", error);
+      console.error("Error", error);
     });
 };
 

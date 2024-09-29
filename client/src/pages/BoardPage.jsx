@@ -209,7 +209,7 @@ const BoardPage = () => {
       socket.on("participantsList", (participantsList) => {
         setParticipants(participantsList);
       });
-      console.log(`${userName} покидает комнату`);
+      console.log(`${userName} left the room`);
     });
 
     return () => {
